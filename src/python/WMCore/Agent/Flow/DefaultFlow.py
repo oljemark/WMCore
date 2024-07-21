@@ -126,7 +126,7 @@ handler = {'messageIn'   : 'JobProcessSuccess', \
            'synchronize' : 'JobPostProcess'}
 config.General.handlers.append(pickle.dumps(handler))
 
-handler = {'messageIn'   : 'JobProcessSucess', \
+handler = {'messageIn'   : 'JobProcessSuccess', \
            'messageOut'  : 'AccountData', \
            'component'   : 'MergeSensor', \
            'synchronize' : 'JobPostProcess', \
