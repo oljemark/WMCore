@@ -37,7 +37,7 @@ class CouchAppTestHarness(object):
     def __init__(self, couchUrl=None, testClassName=None):
         self.couchUrl = os.environ.get("COUCHURL", couchUrl)
         if self.couchUrl == None:
-            msg = "COUCHRURL env var not set..."
+            msg = "COUCHURL env var not set..."
             raise RuntimeError(msg)
         if self.couchUrl.endswith('/'):
             raise RuntimeError("COUCHURL env var shouldn't end with /")
